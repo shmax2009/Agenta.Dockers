@@ -11,6 +11,7 @@ compile:
 build:
 	@echo "Building..."
 	@$(Compiler) -o Run *.o
+	
 clear:
 	@#echo "Clearing..."
 #	@rm build -rf

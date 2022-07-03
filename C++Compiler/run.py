@@ -11,7 +11,8 @@ while True:
         if file.endswith(".zip"):
             # extract the file with bash
             os.system(
-                f"unzip {in_path}{file} -d {out_path}{file.split('.')[0]}" + "&&" + f"rm {in_path}{file}")
+                f"unzip {in_path}{file} -d {out_path}{file.split('.')[0]}" + "&&" + f"cd {out_path}/{file.split('.')[0]}" + "&&" + "/compile.sh")
+            os.system(f"rm {in_path}{file}")
             # delete the zip file
         # wait for 1 second
-        time.sleep(1)
+    time.sleep(1)

@@ -1,10 +1,11 @@
 FROM ubuntu-superhero
 
-COPY Makefile Makefile
-COPY run.sh run.sh
+COPY Makefile /Makefile
+COPY compile.sh /compile.sh
+COPY run.py /run.py
 
 WORKDIR /src
 
-RUN chmod +x /run.sh
+# RUN chmod +x /run.sh
 
-CMD  /run.sh
+CMD python3 /run.py
