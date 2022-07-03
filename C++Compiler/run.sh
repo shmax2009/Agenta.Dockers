@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mv /exec-my/Makefile ./Makefile
+mv Makefile ./Makefile
 
 make compile
 make build

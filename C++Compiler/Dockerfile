@@ -1,10 +1,10 @@
 FROM ubuntu-superhero
 
-COPY Makefile /exec-my/Makefile
-COPY run.sh /exec-my/run.sh
+COPY Makefile Makefile
+COPY run.sh run.sh
 
 WORKDIR /src
 
-RUN chmod +x /exec-my/run.sh
+RUN chmod +x /run.sh
 
-CMD  /exec-my/run.sh
+CMD  /run.sh

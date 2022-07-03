@@ -1,9 +1,8 @@
 FROM ubuntu-superhero
 
-COPY run.sh /run.sh
+COPY run.py /run.py
 
 WORKDIR /src
 
-RUN chmod +x /run.sh
 
-CMD  /run.sh
+CMD  python3 /run.py
