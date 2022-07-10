@@ -1,6 +1,6 @@
 Compiler:=g++
 
-all:compile
+all: compile build
 SOURCES := $(shell find $(SOURCEDIR) -name '*.cpp')
 
 compile:

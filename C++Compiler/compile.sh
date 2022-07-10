@@ -1,17 +1,14 @@
 #!/bin/bash
-mv /Makefile Makefile
+cp /Makefile Makefile
 
-make compile
-make build
+make 2>>compile.log
 
 rm build -rf
 mkdir "build"
 
-for file in *.o;
- do
-   mv "${file}" "build/${file}";
- done;
-
+for file in *.o; do
+  mv "${file}" "build/${file}"
+done
 
 rm Makefile -rf
 rm build -rf

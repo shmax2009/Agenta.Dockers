@@ -6,6 +6,6 @@ COPY run.py /run.py
 
 WORKDIR /src
 
-# RUN chmod +x /run.sh
+RUN chmod +x /compile.sh
 
 CMD python3 /run.py
