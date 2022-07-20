@@ -10,7 +10,7 @@ compile:
 
 build:
 	@echo "Building..."
-	@$(Compiler) -o Run *.o
+	@$(Compiler) -o app.run *.o
 	
 clear:
 	@#echo "Clearing..."
